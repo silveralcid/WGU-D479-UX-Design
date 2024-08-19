@@ -1,0 +1,540 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+
+  #RPsbs-1593,
+  #RPsbsr-1593 {
+    padding: var(--sectionPadding);
+    margin-top: 3.5em;
+  }
+
+  #RPsbs-1593 .cs-container,
+  #RPsbsr-1593 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #RPsbs-1593 .cs-content,
+  #RPsbsr-1593 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+
+  #RPsbs-1593 .cs-text,
+  #RPsbsr-1593 .cs-text {
+    margin-bottom: 1rem;
+  }
+
+  #RPsbs-1593 .cs-text:last-of-type,
+  #RPsbsr-1593 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+
+  #RPsbs-1593 .cs-button-solid,
+  #RPsbsr-1593 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 3rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+
+  #RPsbs-1593 .cs-button-solid:before,
+  #RPsbsr-1593 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width .3s;
+  }
+
+  #RPsbs-1593 .cs-button-solid:hover:before,
+  #RPsbsr-1593 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+
+  #RPsbs-1593 .cs-image-group,
+  #RPsbsr-1593 .cs-image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .745em, resets at desktop */
+    font-size: min(1.959vw, .745em);
+    width: 39.375em;
+    /* we set a minimum height so it never gets smaller than this value */
+    min-height: 39.25em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #RPsbs-1593 .cs-picture,
+  #RPsbsr-1593 .cs-picture {
+    position: absolute;
+  }
+
+  #RPsbs-1593 .cs-picture img,
+  #RPsbsr-1593 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  #RPsbs-1593 .cs-picture1,
+  #RPsbsr-1593 .cs-picture1 {
+    /* the percentage heights allow them to be responsive to the height of the parent cs-image-group. On desktop, when the felxbox is set to aling-items: stretch, the cs-image group will stretch to fill the height of the parent container. So when you add more content to the cs-content group and make it taller, the cs-image group will get taller with it and every image will stretch with the parent, making this entire group responsive to the changing amounts of content next to it */
+    width: 25.8125em;
+    height: 79.617834%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  #RPsbs-1593 .cs-picture2,
+  #RPsbsr-1593 .cs-picture2 {
+    width: 25.8125em;
+    height: 44.585987%;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+
+  #RPsbs-1593 .cs-container,
+  #RPsbsr-1593 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #RPsbs-1593 .cs-content,
+  #RPsbsr-1593 .cs-content {
+    /* this padding sets a minimum gap between the top and bottom of the content div and the top and bottom of the cs-image-group */
+    padding: 3.75rem 0;
+    /* while the cs-image-group will stretch to fill the height of the parent, this property will ensure that the cs-content group aligns itse;f in the center of the parent div instead of stretching */
+    align-self: center;
+  }
+
+  #RPsbs-1593 .cs-image-group,
+  #RPsbsr-1593 .cs-image-group {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+}
+
+/*-- -------------------------- -->
+<---   Side By Side Reverse     -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #RPsbsr-1593 {
+    background-color: #f7f7f7;
+  }
+
+  #RPsbsr-1593 .cs-picture1 {
+    left: auto;
+    right: 0;
+  }
+
+  #RPsbsr-1593 .cs-picture2 {
+    right: auto;
+    left: 0;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #RPsbsr-1593 .cs-image-group {
+    /* sends it to the right in the 2nd position */
+    order: 2;
+  }
+}
+
+/*-- -------------------------- -->
+<---            FAQ             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #faq-1741 {
+    padding: var(--sectionPadding);
+    position: relative;
+  }
+
+  #faq-1741 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 36.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+
+  #faq-1741 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+
+  #faq-1741 .cs-title {
+    max-width: 15ch;
+    margin: 0 0 2rem;
+  }
+
+  #faq-1741 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+
+  #faq-1741 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+
+  #faq-1741 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+
+  #faq-1741 .cs-faq-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  #faq-1741 .cs-faq-item {
+    list-style: none;
+    width: 100%;
+    /* clips all corners of the button that overlap the rounded border */
+    overflow: hidden;
+    transition: border-bottom 0.3s;
+  }
+
+  #faq-1741 .cs-faq-item.active .cs-button {
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+  }
+
+  #faq-1741 .cs-faq-item.active .cs-button:before {
+    background-color: var(--bodyTextColorWhite);
+    transform: rotate(315deg);
+  }
+
+  #faq-1741 .cs-faq-item.active .cs-button:after {
+    background-color: var(--bodyTextColorWhite);
+    transform: rotate(-315deg);
+  }
+
+  #faq-1741 .cs-faq-item.active .cs-item-text {
+    height: auto;
+    /* 16px - 24px */
+    padding: 1rem clamp(1rem, 2vw, 1.5rem);
+    opacity: 1;
+    border: 1px solid #e8e8e8;
+  }
+
+  #faq-1741 .cs-button {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: bold;
+    line-height: 1.2em;
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+    padding-left: 3.25rem;
+    background-color: transparent;
+    color: var(--headerColor);
+    border: 1px solid #e8e8e8;
+    display: block;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  #faq-1741 .cs-button:hover {
+    cursor: pointer;
+  }
+
+  #faq-1741 .cs-button:before {
+    /* left line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--headerColor);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 1.125rem;
+    transform: rotate(45deg);
+    transition: transform 0.5s;
+    /* animate the transform from the left side of the x axis, and the center of the y */
+    transform-origin: left center;
+  }
+
+  #faq-1741 .cs-button:after {
+    /* right line */
+    content: "";
+    width: 0.5rem;
+    height: 0.125rem;
+    background-color: var(--headerColor);
+    opacity: 1;
+    display: block;
+    position: absolute;
+    top: 45%;
+    left: 1.3125rem;
+    transform: rotate(-45deg);
+    transition: transform 0.5s;
+    /* animate the transform from the right side of the x axis, and the center of the y */
+    transform-origin: right center;
+  }
+
+  #faq-1741 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    height: 0;
+    margin: 0;
+    /* clips the text so it doesn't show up */
+    overflow: hidden;
+    color: var(--bodyTextColor);
+    opacity: 0;
+    transition: opacity 0.3s, padding-bottom 0.3s;
+  }
+
+  #faq-1741 .cs-gallery {
+    width: 100%;
+    /* changes to 1720 at tablet */
+    max-width: 36.5rem;
+    margin: clamp(3rem, 6vw, 4rem) auto 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.5vw, 1.25rem);
+  }
+
+  #faq-1741 .cs-picture {
+    /* 210px - 400px */
+    min-height: clamp(13.125rem, 27vw, 25rem);
+    display: block;
+    grid-column: span 5;
+    grid-row: span 1;
+    position: relative;
+  }
+
+  #faq-1741 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #faq-1741 .cs-gallery {
+    max-width: 107.5rem;
+  }
+
+  #faq-1741 .cs-picture {
+    grid-column: span 1;
+  }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #faq-1741 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  #faq-1741 .cs-content {
+    text-align: left;
+    width: 40%;
+    align-items: flex-start;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+
+  #faq-1741 .cs-gallery {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  #faq-1741 .cs-picture {
+    grid-column: span 1;
+  }
+
+  #faq-1741 .cs-picture:nth-of-type(4),
+  #faq-1741 .cs-picture:nth-of-type(5) {
+    grid-column: span 1;
+  }
+}
+
+
+/*-- -------------------------- -->
+<---           Footer           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px - Contains hover state */
+@media only screen and (min-width: 0rem) {
+  #cs-footer-107 {
+    padding: 2.5rem 1rem;
+    background: #1a1a1a;
+  }
+
+  #cs-footer-107 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+  }
+
+  #cs-footer-107 .cs-ul {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    /* make flexbox arrange top to bottom */
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  #cs-footer-107 .cs-li {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  #cs-footer-107 .cs-copyright {
+    font-size: 0.9375rem;
+    line-height: 1.5em;
+    margin-top: 1.25rem;
+    color: #a0a3bd;
+    display: block;
+    /* send to first position at the bottom */
+    order: 1;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+
+  #cs-footer-107 .cs-link {
+    /* 15px - 17px */
+    font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+
+  #cs-footer-107 .cs-link:hover:before {
+    width: 100%;
+  }
+
+  #cs-footer-107 .cs-link:before {
+    /* top right box */
+    content: "";
+    width: 0%;
+    height: 0.1875rem;
+    background: var(--bodyTextColorWhite);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    bottom: -0.125rem;
+    left: 0;
+    transition: width 0.3s;
+  }
+}
+
+/* Tablet - 700px */
+@media only screen and (min-width: 43.75rem) {
+  #cs-footer-107 .cs-ul {
+    flex-direction: row;
+    /* push everything to the left */
+    justify-content: flex-start;
+    /* 44px - 88px */
+    gap: clamp(2.75rem, 7vw, 5.5rem);
+  }
+
+  #cs-footer-107 .cs-copyright {
+    /* marign auto on the left pushes away from the rest of the flex children */
+    margin: 0 0 0 auto;
+    /* send to the right most position */
+    order: 2;
+  }
+}

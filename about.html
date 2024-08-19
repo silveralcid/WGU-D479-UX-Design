@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches" />
+    <meta property="og:description" content="Meta description for the page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)" />
+    <meta property="og:image" content="/assets/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg" />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <title>Taniti Island - About</title>
+</head>
+
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                Taniti Island
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index.html" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about.html" class="cs-li-link cs-active">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/entertainment.html" class="cs-li-link">
+                                Entertainment
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/dining.html" class="cs-li-link">
+                                Dining
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/lodging.html" class="cs-li-link">
+                                Lodging
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/transportation.html" class="cs-li-link">
+                                Transportation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+
+        <!-- ============================================ -->
+        <!--                Side By Side                  -->
+        <!-- ============================================ -->
+
+        <section id="RPsbs-1593">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">About Taniti</span>
+                    <h2 class="cs-title">A Pacific Hidden Gem</h2>
+                    <p class="cs-text">
+                        Taniti is a hidden gem in the Pacific, a small but captivating tropical island packed with
+                        diverse landscapes and vibrant culture. Despite its modest size of under 500 square miles,
+                        Taniti offers everything from sun-kissed sandy beaches to rugged rocky shores, a picturesque
+                        harbor, and lush rainforests teeming with life. The island's dramatic mountainous interior is
+                        crowned by a small, active volcano, adding an element of adventure to your visit. Home to around
+                        20,000 warm and welcoming locals, Taniti has recently transformed from a fishing and
+                        agricultural hub into a burgeoning tourist destination, ready to share its natural wonders with
+                        the world.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--             Side By Side Reverse             -->
+        <!-- ============================================ -->
+
+        <section id="RPsbsr-1593">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">Safety</span>
+                    <h2 class="cs-title">The Safest Island Around</h2>
+                    <p class="cs-text">
+                        Taniti Island is known for its safety and peaceful atmosphere, but as with any destination, it's
+                        important to stay vigilant. Recently, we've seen a slight uptick in pickpocketing and other
+                        minor incidents. To ensure your stay remains as safe and enjoyable as possible, we encourage you
+                        to keep a close eye on your belongings and take common-sense precautions. Your safety is our
+                        priority, and a little mindfulness will help you fully enjoy your time on our beautiful island.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                    FAQ                       -->
+        <!-- ============================================ -->
+
+        <section id="faq-1741">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Frequently Asked Questions</span>
+                    <h2 class="cs-title">Our FAQs</h2>
+                </div>
+                <div class="cs-flex-group">
+                    <ul class="cs-faq-group">
+                        <!-- Active class added as default -->
+                        <li class="cs-faq-item active">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Do I need to buy a power adapter for my electronics?
+                                </span>
+                            </button>
+                            <p class="cs-item-text">
+                                Not at all! The good news is our power outlets are 120 volts, the same as in the United
+                                States.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    What are the alcohol rules?
+                                </span>
+                            </button>
+                            <p class="cs-item-text">
+                                The drinking age on Taniti is 18 and the drinking age is not strictly enforced. Alcohol
+                                is not allowed to be served or sold between the hours of midnight and 9:00 a.m.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Is this island safe? What if I get injured during my vacation?
+                                </span>
+                            </button>
+                            <p class="cs-item-text">
+                                Violent crime is very rare on Taniti, but as tourism increases, there are more reports
+                                of pickpocketing and other petty crimes. There is one hospital and several clinics. The
+                                hospital has many multilingual employees
+                                to take care of anyone!
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Will I experience a language barrier?
+                                </span>
+                            </button>
+                            <p class="cs-item-text">
+                                Many younger Tanitians speak fluent English. Very little English is spoken in rural
+                                areas, especially by the older residents.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    Why are some restaurants and stores closed?
+                                </span>
+                            </button>
+                            <p class="cs-item-text">
+                                Taniti enjoys a large number of national holidays, and many tourist attractions and
+                                restaurants will be closed on holidays, so visitors should plan accordingly.
+                            </p>
+                        </li>
+                        <li class="cs-faq-item">
+                            <button class="cs-button">
+                                <span class="cs-button-text">
+                                    What currency does Tanti use? Is there a bank available?
+                                </span>
+                            </button>
+                            <p class="cs-item-text">
+                                Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros
+                                and yen. Several banks facilitate currency exchange, and many businesses accept major
+                                credit cards.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cs-gallery">
+                <!--Picture 1-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-1.png">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-1.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-1.png" alt="gallery"
+                        width="272" height="320">
+                </picture>
+                <!--Picture 2-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-2.png">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-2.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-2.png" alt="gallery"
+                        width="272" height="320">
+                </picture>
+                <!--Picture 3-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-3.png">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-3.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-3.png" alt="gallery"
+                        width="272" height="320">
+                </picture>
+                <!--Picture 4-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-4.png">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-4.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-4.png" alt="gallery"
+                        width="272" height="320">
+                </picture>
+                <!--Picture 5-->
+                <picture class="cs-picture">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-5.png">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-5.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/gym-faq-5.png" alt="gallery"
+                        width="272" height="320">
+                </picture>
+            </div>
+        </section>
+
+
+
+
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-107">
+            <div class="cs-container">
+                <ul class="cs-ul">
+                    <li class="cs-li cs-copyright">
+                        © 2024 Copyright
+                    </li>
+                    <li class="cs-li">
+                        <a href="/index.html" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about.html" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/entertainment.html" class="cs-link">Entertainment</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/dining.html" class="cs-link">Dining</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/lodging.html" class="cs-link">Lodging</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/transportation.html" class="cs-link">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+        <script>
+            const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+            for (const item of faqItems) {
+                const onClick = () => {
+                    item.classList.toggle('active');
+                };
+                item.addEventListener('click', onClick);
+            }
+        </script>
+
+</body>
+
+</html>

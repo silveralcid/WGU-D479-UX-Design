@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches" />
+    <meta property="og:description" content="Meta description for the page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)" />
+    <meta property="og:image" content="/assets/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg" />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/lodging.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <title>Taniti Island - Lodging</title>
+</head>
+
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                Taniti Island
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index.html" class="cs-li-link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about.html" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/entertainment.html" class="cs-li-link">
+                                Entertainment
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/dining.html" class="cs-li-link">
+                                Dining
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/lodging.html" class="cs-li-link cs-active">
+                                Lodging
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/transportation.html" class="cs-li-link">
+                                Transportation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--              Side By Side Reverse            -->
+        <!-- ============================================ -->
+
+        <section id="RPsbsr-1587">
+            <div class="cs-container">
+                <picture class="cs-picture">
+                    <!--Mobile Image-->
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models.png">
+                    <!--Tablet and above Image-->
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models.png">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models.png" alt="models"
+                        width="586" height="690">
+                </picture>
+                <div class="cs-content">
+                    <span class="cs-topper">Lodging</span>
+                    <h2 class="cs-title">Live It Up Island Style</h2>
+                    <ul class="cs-card-group">
+                        <li class="cs-item">
+                            <div class="wrapper">
+                                <span class="cs-item-number">01</span>
+                                <h3 class="cs-h3">
+                                    Diverse Accommodations
+                                </h3>
+                            </div>
+                            <p class="cs-item-text">
+                                Options range from budget-friendly hostels to a luxurious
+                                four-star resort.
+                            </p>
+                        </li>
+                        <li class="cs-item">
+                            <div class="wrapper">
+                                <span class="cs-item-number">02</span>
+                                <h3 class="cs-h3">
+                                    Family-Owned Charm
+                                </h3>
+                            </div>
+                            <p class="cs-item-text">
+                                Enjoy stays in cozy, family-run hotels and charming bed and breakfasts.
+                            </p>
+                        </li>
+                        <li class="cs-item">
+                            <div class="wrapper">
+                                <span class="cs-item-number">03</span>
+                                <h3 class="cs-h3">
+                                    Quality Assurance
+                                </h3>
+                            </div>
+                            <p class="cs-item-text">
+                                All lodging is government-regulated and regularly inspected for
+                                your peace of mind.
+                            </p>
+                        </li>
+                        <li class="cs-item">
+                            <div class="wrapper">
+                                <span class="cs-item-number">04</span>
+                                <h3 class="cs-h3">
+                                    Something for Everyone
+                                </h3>
+                            </div>
+                            <p class="cs-item-text">
+                                Whether you're seeking comfort or luxury, Taniti has the
+                                perfect place to stay.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--                   Gallery                    -->
+        <!-- ============================================ -->
+
+        <section id="gallery-1152">
+            <div class="cs-container">
+                <div class="cs-content">
+                    <span class="cs-topper">Our Portfolio</span>
+                    <h2 class="cs-title">Our Photo Gallery</h2>
+                </div>
+                <div class="cs-gallery">
+                    <!--Picture 1-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char1.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char1.jpg" alt="gallery"
+                            width="272" height="320">
+                    </picture>
+                    <!--Picture 2-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char2.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char2.jpg" alt="gallery"
+                            width="272" height="320">
+                    </picture>
+                    <!--Picture 3-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char3.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char3.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char3.jpg" alt="gallery"
+                            width="272" height="320">
+                    </picture>
+                    <!--Picture 4-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char4.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char4.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char4.jpg" alt="gallery"
+                            width="272" height="320">
+                    </picture>
+                    <!--Picture 5-->
+                    <picture class="cs-image">
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char5.jpg">
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char5.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/char5.jpg" alt="gallery"
+                            width="272" height="320">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-107">
+            <div class="cs-container">
+                <ul class="cs-ul">
+                    <li class="cs-li cs-copyright">
+                        © 2024 Copyright
+                    </li>
+                    <li class="cs-li">
+                        <a href="/index.html" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about.html" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/entertainment.html" class="cs-link">Entertainment</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/dining.html" class="cs-link">Dining</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/lodging.html" class="cs-link">Lodging</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/transportation.html" class="cs-link">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+
+</html>

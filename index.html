@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Swap our for actual link-->
+    <link rel="canonical" href="https://www.website.com/">
+
+    <meta name="description" content="Meta description for the page">
+    <meta name="keywords" content="">
+
+    <!--Social Media Display-->
+    <meta property="og:title" content="Title that shows up on google searches" />
+    <meta property="og:description" content="Meta description for the page" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="Official link for that page (https://www.site.com)" />
+    <meta property="og:image" content="/assets/images/social.jpg" />
+    <meta property="og:image:secure_url" content="/assets/images/social.jpg" />
+
+    <!--Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Preload -->
+    <link rel="preload" as="image" href="assets/images/logo-light.png">
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+
+    <link rel="stylesheet" href="/css/core-styles.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/dark.css">
+
+    <title>Taniti Island - Home</title>
+</head>
+
+<body>
+    <!--Screen reader skip main nav-->
+    <a class="skip" aria-label="skip to main content" href="#main">Click To Skip To Main Content</a>
+
+    <!-- ============================================ -->
+    <!--                 Navigation                   -->
+    <!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="/index.html" class="cs-logo" aria-label="back to home">
+                Taniti Island
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="/index.html" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/about.html" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/entertainment.html" class="cs-li-link">
+                                Entertainment
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/dining.html" class="cs-li-link">
+                                Dining
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/lodging.html" class="cs-li-link">
+                                Lodging
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="/transportation.html" class="cs-li-link">
+                                Transportation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <!-- ============================================ -->
+        <!--                    Hero                      -->
+        <!-- ============================================ -->
+
+        <section id="hero-219">
+            <div class="cs-container">
+                <h1 class="cs-title">Your Tropical Paradise Awaits</h1>
+                <p class="cs-text">
+                    Discover the Unspoiled Beauty of Taniti Island today!
+                </p>
+                <a href="/about.html" class="cs-button-solid">Learn More</a>
+            </div>
+
+            <!-- Background Image -->
+            <picture class="cs-background">
+                <source media="(max-width: 600px)"
+                    srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen-m.jpg">
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg">
+                <img decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Hero/kitchen.jpg" alt="kitchen"
+                    width="2250" height="1500" aria-hidden="true">
+            </picture>
+        </section>
+
+
+
+
+        <!-- ============================================ -->
+        <!--                Side By Side                  -->
+        <!-- ============================================ -->
+
+        <section id="RTsbs-1594">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">About us</span>
+                    <h2 class="cs-title">The Island of Relaxation</h2>
+                    <p class="cs-text">
+                        Welcome to Taniti Island, your perfect Pacific getaway! Whether you're planning a wedding,
+                        family vacation, honeymoon, or business event, we're here to make your stay unforgettable.
+                        Explore our site to discover local activities, accommodations, dining options, and more. We
+                        can't wait to welcome you!
+                    </p>
+                    <a href="/about.html" class="cs-button-solid">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--             Side By Side Reverse             -->
+        <!-- ============================================ -->
+
+        <section id="RTsbsr-1594">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">Entertainment</span>
+                    <h2 class="cs-title">Live Your Best Life</h2>
+                    <p class="cs-text">
+                        Taniti Island offers something for everyone, no matter the occasion! Dive into water adventures
+                        like snorkeling, or explore the lush rainforest on a scenic hike. With countless activities to
+                        choose from, we’re excited to make your experience unforgettable!
+                    </p>
+                    <a href="entertainment.html" class="cs-button-solid">Live More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--             Side By Side Triplet             -->
+        <!-- ============================================ -->
+
+        <section id="RTsbst-1594">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">Dining</span>
+                    <h2 class="cs-title">Eat the Best in the Pacific</h2>
+                    <p class="cs-text">
+                        Taniti Island offers a diverse range of dining experiences, from local cuisine to international
+                        flavors, ensuring something for every palate. Additionally, you'll find well-stocked grocery
+                        stores that cater to all your needs, making your stay convenient and enjoyable. Whether you're
+                        dining out or cooking in, we've got you covered.
+                    </p>
+                    <a href="/dining.html" class="cs-button-solid">Eat More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--             Side By Side Reverse             -->
+        <!-- ============================================ -->
+
+        <section id="RTsbsr-1594">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">Lodging</span>
+                    <h2 class="cs-title">Relax in Five Star Hotels</h2>
+                    <p class="cs-text">
+                        Our wide selection of hotels provides the perfect blend of comfort and luxury, allowing you to
+                        relax and unwind in your home away from home. Whether you seek a cozy beachfront bungalow or a
+                        modern resort with all the amenities, our accommodations are designed to make your stay as
+                        comfortable and enjoyable as possible. Lounge, recharge, and indulge in the serene ambiance that
+                        Taniti Island has to offer.
+                    </p>
+                    <a href="/lodging.html" class="cs-button-solid">Relax More</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================ -->
+        <!--             Side By Side Triplet             -->
+        <!-- ============================================ -->
+
+        <section id="RTsbst-1594">
+            <div class="cs-container">
+                <div class="cs-image-group">
+                    <!--Top left image-->
+                    <picture class="cs-picture cs-picture1">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/models1.jpg"
+                            alt="mechanic" width="413" height="500">
+                    </picture>
+                    <!--Top Right image-->
+                    <picture class="cs-picture cs-picture2">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)"
+                            srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg">
+                        <img loading="lazy" decoding="async"
+                            src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/ecommerce/shoes2.jpg"
+                            alt="mechanic" width="413" height="280">
+                    </picture>
+                </div>
+                <div class="cs-content">
+                    <span class="cs-topper">Transportation</span>
+                    <h2 class="cs-title">Get Around the Island Way</h2>
+                    <p class="cs-text">
+                        Let us take care of your transportation needs on Taniti Island, ensuring you can explore every
+                        corner with ease. Whether you prefer to travel by foot along scenic trails, by sea with our boat
+                        services, or by air for a breathtaking aerial view, we’ve got you covered. Our reliable and
+                        convenient options make it easy to reach your destination, wherever your island adventure takes
+                        you.
+                    </p>
+                    <a href="/transportation.html" class="cs-button-solid">Travel More</a>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ============================================ -->
+        <!--                   Footer                     -->
+        <!-- ============================================ -->
+
+        <footer id="cs-footer-107">
+            <div class="cs-container">
+                <ul class="cs-ul">
+                    <li class="cs-li cs-copyright">
+                        © 2024 Copyright
+                    </li>
+                    <li class="cs-li">
+                        <a href="/index.html" class="cs-link">Home</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/about.html" class="cs-link">About</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/entertainment.html" class="cs-link">Entertainment</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/dining.html" class="cs-link">Dining</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/lodging.html" class="cs-link">Lodging</a>
+                    </li>
+                    <li class="cs-li">
+                        <a href="/transportation.html" class="cs-link">Transportation</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+</body>
+
+</html>

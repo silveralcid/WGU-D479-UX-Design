@@ -1,0 +1,7 @@
+DONT COMMIT OR PUSH UNTIL DONE
+1. clean up
+2. create foundation
+3. build minimum
+4. delete this
+5. publish on github pages
+6. do supporting persona + wireframe
