@@ -6,7 +6,7 @@
     Course D479 - Western Governer's University
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://silveralcid.github.io/WGU-D479-UX-Design/">View Demo</a>
 </div>
 
 
