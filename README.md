@@ -1,9 +1,9 @@
 <a id="readme-top"></a>
 
-<h3 align="center">Software I - C#</h3>
+<h3 align="center">User Experience Design</h3>
 
   <p align="center">
-    Course C968 - Western Governer's University
+    Course D479 - Western Governer's University
     <br />
     <br />
     <a href="https://github.com/github_username/repo_name">View Demo</a>
@@ -17,39 +17,51 @@
 
 ### Built With
 
-* .NET
+* Vanilla HTML5
+* Vanilla CSS3
+* JavaScript
 
 
 ## Course Information
 
-Software I - C# builds object-oriented programming expertise and introduces powerful new tools for C# application development. You will learn about and put into action: class design, exception handling, and other object-oriented principles and constructs to develop software that meets business requirements. This course requires foundational knowledge of object-oriented programming.
+User Experience Design explores multiple tools and techniques used in user experience design. Students are presented with an in-depth view of activities involved in the design of user experience and have the opportunity to create several deliverables including persona profiles, information architectures, and prototypes of different levels of fidelity. In addition, the course also covers usability testing and the evaluation of quantitative and qualitative data derived from these and other experiments.
+
 
 ### Competencies
 
-**Classes and Interfaces**
+**Establishes Timeframes**
 
-The graduate designs software solutions with appropriate classes, objects, methods, and interfaces to achieve specific goals.
+The learner establishes timeframes for user experience projects based on business requirements.
 
-**Object-Oriented Principles**
+**Design Wireframes and Prototypes**
 
-The graduate implements object-oriented design principles (e.g., inheritance, encapsulation, and abstraction) in developing applications for ensuring the application's scalability.
+The learner designs application wireframes and prototypes using industry standard tools and techniques.
 
-**Application Development**
+**Conducts Usability Testing**
 
-The graduate produces applications using high-level programming language constructs to meet business requirements.
+The learner conducts formal and informal usability testing as part of application design prototyping.
 
-**Exception Handling**
-The graduate incorporates simple exception handling in application development for improving user experience and application stability.
+**Updates Application Design**
 
-**User Interface Development**
-The graduate develops user interfaces to meet project requirements.
+The learner updates application designs based on user testing analysis results.
 
 ### Scenario
 
-You are working for a small manufacturing organization that has outgrown its current inventory system. They have been using a spreadsheet program to manually enter inventory additions, deletions, and other data from a paper-based system but would now like you to develop a more sophisticated inventory program.
+You have been contacted by the local government of the small island of Taniti. Since the island’s economy relies heavily on tourism, the Tanitian government has developed a plan to increase the number of tourists who visit the island and its attractions. As part of this plan, they have hired you to design a tourism website.
 
-They have provided you with a mock-up of the user interface to use in the design and development of the system (see the attached "GUI Mock-Up") and a class diagram to assist you in your work (see the attached "UML Class Diagram"). The organization also has specific business requirements that must be included as part of the application. A system analyst from your company created the solution statements outlined in the requirements section based on the manufacturing organization's business requirements. You will use these solution statements to develop your application.
+The Tanitian government has conducted a survey to gather information about current tourists. Their findings from this survey are shown in the “Survey Results” supporting document. The government has also provided you with the attached “About the Island” document to better inform you about Taniti and its visitors.
 
+Taniti’s current website has an outdated look and feel. The page navigation is unclear. All the tourist information is jumbled together on a single page, and the site lacks booking information and links to each activity or option. The site is also not compatible with mobile devices.
+
+The Tanitian government would like you to spend no more than one month designing a new website that will increase tourism on the island of Taniti and provide a welcoming experience for prospective tourists.
+
+### Requirements
+
+* Create a timeline of the UX design activities that will take place during this project
+* Create a persona profile based on the attached “Survey Results” and “About the Island” supporting documents
+* Create a low-fidelity wireframe showing the suggested flow of your new design for the Tanitian website
+* Conduct guerrilla usability testing with at least three user testers
+* Create an interactive prototype for the Tanitian website that reflects your wireframe design and incorporates the feedback you received during guerrilla testing
 
 
 <!-- CONTACT -->
