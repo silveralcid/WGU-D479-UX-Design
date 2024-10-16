@@ -13,7 +13,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-
+The objective of this project was to design a tourism website for the island of Taniti using user experience (UX) design principles. The project was completed as part of the D479 User Experience Design course at Western Governors University. The design focused on improving the user interface and navigation of the existing site, which was outdated, lacked clear page organization, and was incompatible with mobile devices. Key deliverables included the development of a timeline for UX activities, creation of persona profiles based on survey data, wireframes, guerrilla usability testing, and the design of an interactive prototype to enhance user engagement and increase tourism to the island. The project was built using vanilla HTML5, CSS3, and JavaScript.
 
 ### Built With
 
