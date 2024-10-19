@@ -17,8 +17,8 @@ The objective of this project was to design a tourism website for the island of 
 
 ### Built With
 
-* Vanilla HTML5
-* Vanilla CSS3
+* HTML5
+* CSS3
 * JavaScript
 
 
